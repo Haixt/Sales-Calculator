@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>MP2-Lee_Jalosjos-SEG31-Sales</display-name>
+  <welcome-file-list>
+    	<welcome-file>compute.html</welcome-file>
+  </welcome-file-list>
+  
+  
+ <servlet>
+    <servlet-name>EmployeeSalesServlet</servlet-name>
+    <servlet-class>employee.sales.controller.EmployeeSalesServlet</servlet-class>
+    
+    <init-param>
+      <param-name>PRICES_AS_OF</param-name>
+      <param-value>September 21, 2021</param-value>
+    </init-param>
+    
+    <init-param>
+      <param-name>COMMISSION_A</param-name>
+      <param-value>175</param-value>
+    </init-param>
+    
+    <init-param>
+      <param-name>COMMISSION_A_PERC</param-name>
+      <param-value>0.50</param-value>
+    </init-param>
+    
+    <init-param>
+      <param-name>COMMISSION_A_COMPUTATION</param-name>
+      <param-value>COMMISSION A COMPUTATION</param-value>
+    </init-param>
+    
+    <init-param>
+      <param-name>COMMISSION_B</param-name>
+      <param-value>100</param-value>
+    </init-param>
+    
+    <init-param>
+      <param-name>COMMISSION_B_PERC</param-name>
+      <param-value>0.20</param-value>
+    </init-param>
+    
+    <init-param>
+      <param-name>COMMISSION_B_COMPUTATION</param-name>
+      <param-value>COMMISSION B COMPUTATION</param-value>
+    </init-param>
+    
+      <init-param>
+      <param-name>COMMISSION_C</param-name>
+      <param-value>50</param-value>
+    </init-param>
+    
+    <init-param>
+      <param-name>COMMISSION_C_PERC</param-name>
+      <param-value>0.25</param-value>
+    </init-param>
+    
+    <init-param>
+      <param-name>COMMISSION_C_COMPUTATION</param-name>
+      <param-value>COMMISSION C COMPUTATION</param-value>
+    </init-param>
+    
+    <init-param>
+      <param-name>COMMISSION_RANGE</param-name>
+      <param-value>2500</param-value>
+    </init-param>
+    
+    <init-param>
+      <param-name>COMMISSION_RANGE_PERC</param-name>
+      <param-value>0.075</param-value>
+    </init-param>
+    
+    <init-param>
+      <param-name>NO_COMMISSION</param-name>
+      <param-value>0</param-value>
+    </init-param>
+    
+     <init-param>
+      <param-name>COMMISSION_A_PRINT</param-name>
+      <param-value>50</param-value>
+     </init-param>
+     <init-param>
+      <param-name>COMMISSION_B_PRINT</param-name>
+      <param-value>20</param-value>
+     </init-param>
+     <init-param>
+      <param-name>COMMISSION_C_PRINT</param-name>
+      <param-value>25</param-value>
+     </init-param>
+    
+  </servlet>
+  
+  
+  <servlet-mapping>
+    	<servlet-name>EmployeeSalesServlet</servlet-name>
+   		<url-pattern>/compute.action</url-pattern> 
+  </servlet-mapping>
+</web-app>

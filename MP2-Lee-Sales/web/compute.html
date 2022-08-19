@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Employee Sales Calculator</title>
+</head>
+<body>
+<h2>Lee Employee Sales Calculator</h2>
+	<fieldset>
+		<legend>Employee Form</legend>
+		<form action='compute.action' method='post'>
+			<p>Employee Name:
+				<input type='text' name='employeeName' size='35'
+					required="required"/> 
+			</p>
+			
+			<p>Sales Code: 
+				<select name='salesCode'>
+					<option value="A">A</option>
+					<option value="B">B</option>
+					<option value="C">C</option>
+				</select>
+			</p>
+			
+			<p>Employee Sales:
+				<input type='number' name='employeeSales' size='35'
+					min="1" required="required"/> 
+			</p>
+			<p>
+				<input type="submit" value='Submit'/>&nbsp;&nbsp;&nbsp;
+				<input type='reset'/>
+			</p>
+		</form>
+	</fieldset>
+	<hr/>
+	<p><i>&copy; LEE EMPLOYEE CALCULATOR INC.</i></p>
+</body>
+</html>
